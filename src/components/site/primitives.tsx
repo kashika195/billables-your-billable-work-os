@@ -9,9 +9,9 @@ export function Reveal({
   y = 24,
 }: {
   children: ReactNode;
-  delay?: number;
-  className?: string;
-  y?: number;
+  delay?: number | undefined;
+  className?: string | undefined;
+  y?: number | undefined;
 }) {
   const reduced = useReducedMotion();
   return (
@@ -32,9 +32,9 @@ export function Section({
   children,
   className,
 }: {
-  id?: string;
+  id?: string | undefined;
   children: ReactNode;
-  className?: string;
+  className?: string | undefined;
 }) {
   return (
     <section id={id} className={cn("mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 md:py-28", className)}>
@@ -60,8 +60,8 @@ export function BrowserFrame({
 }: {
   src: string;
   alt: string;
-  className?: string;
-  label?: string;
+  className?: string | undefined;
+  label?: string | undefined;
 }) {
   return (
     <div className={cn("overflow-hidden rounded-3xl border border-border bg-card shadow-float", className)}>
@@ -78,7 +78,15 @@ export function BrowserFrame({
   );
 }
 
-export function PhoneFrame({ src, alt, className }: { src: string; alt: string; className?: string }) {
+export function PhoneFrame({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string | undefined;
+}) {
   return (
     <div
       className={cn(
@@ -98,8 +106,8 @@ export function Counter({
   decimals = 0,
 }: {
   to: number;
-  suffix?: string;
-  decimals?: number;
+  suffix?: string | undefined;
+  decimals?: number | undefined;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [value, setValue] = useState(0);
