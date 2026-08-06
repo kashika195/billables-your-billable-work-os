@@ -19,8 +19,9 @@ export function Reveal({
       className={className}
       initial={reduced ? false : { opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "-90px" }}
+      transition={{ duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] }}
+
     >
       {children}
     </motion.div>
@@ -37,7 +38,7 @@ export function Section({
   className?: string | undefined;
 }) {
   return (
-    <section id={id} className={cn("mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 md:py-28", className)}>
+    <section id={id} className={cn("mx-auto w-full max-w-7xl px-5 py-24 sm:px-8 md:py-36", className)}>
       {children}
     </section>
   );
@@ -45,7 +46,7 @@ export function Section({
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+    <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs font-semibold tracking-[0.14em] text-muted-foreground lowercase backdrop-blur-sm">
       <span className="h-1.5 w-1.5 rounded-full bg-accent" />
       {children}
     </span>
@@ -64,19 +65,25 @@ export function BrowserFrame({
   label?: string | undefined;
 }) {
   return (
-    <div className={cn("overflow-hidden rounded-3xl border border-border bg-card shadow-float", className)}>
-      <div className="flex items-center gap-2 border-b border-border bg-muted/70 px-4 py-3">
-        <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
-        <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
-        <span className="h-2.5 w-2.5 rounded-full bg-primary/40" />
-        <div className="mx-auto rounded-full bg-background px-4 py-1 text-[11px] text-muted-foreground">
+    <div
+      className={cn(
+        "overflow-hidden rounded-3xl border border-border bg-ink shadow-float ring-1 ring-white/5",
+        className,
+      )}
+    >
+      <div className="flex items-center gap-2 border-b border-border bg-ink px-4 py-3">
+        <span className="h-2.5 w-2.5 rounded-full bg-destructive/50" />
+        <span className="h-2.5 w-2.5 rounded-full bg-accent/60" />
+        <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/40" />
+        <div className="mx-auto rounded-full bg-card px-4 py-1 text-[11px] text-muted-foreground">
           {label}
         </div>
       </div>
-      <img src={src} alt={alt} loading="lazy" className="block w-full" />
+      <img src={src} alt={alt} loading="lazy" className="block w-full opacity-95" />
     </div>
   );
 }
+
 
 export function PhoneFrame({
   src,
