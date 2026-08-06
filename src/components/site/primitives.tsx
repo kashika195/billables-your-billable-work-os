@@ -38,7 +38,7 @@ export function Section({
   className?: string | undefined;
 }) {
   return (
-    <section id={id} className={cn("mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 md:py-28", className)}>
+    <section id={id} className={cn("mx-auto w-full max-w-7xl px-5 py-24 sm:px-8 md:py-36", className)}>
       {children}
     </section>
   );
