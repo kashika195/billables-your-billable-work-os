@@ -74,9 +74,9 @@ export function Hero() {
             <BrowserFrame src={dashboard.url} alt="Billables dashboard showing work and admin actions" />
           </div>
 
-          <div className="absolute -right-4 -bottom-10 hidden lg:block">
+          <div className="absolute -right-10 -bottom-16 hidden lg:block">
             <div className="animate-float-slow [animation-delay:1.2s]">
-              <PhoneFrame src={mobileHome.url} alt="Billables mobile app home screen" className="w-[190px]" />
+              <PhoneFrame src={mobileHome.url} alt="Billables mobile app home screen" className="w-[172px]" />
             </div>
           </div>
 
