@@ -119,9 +119,7 @@
     border-color 0.35s ease,
     box-shadow 0.35s ease,
     transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
 
-@utility surface-card {
   &:hover {
     border-color: color-mix(in oklab, var(--accent) 45%, var(--border));
     box-shadow:
@@ -129,6 +127,7 @@
       0 0 0 1px color-mix(in oklab, var(--accent) 22%, transparent);
   }
 }
+
 
 @utility glass-panel {
   background-color: color-mix(in oklab, var(--card) 62%, transparent);
