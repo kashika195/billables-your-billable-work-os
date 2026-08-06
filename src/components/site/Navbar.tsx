@@ -48,7 +48,7 @@ export function Navbar() {
           ))}
           <a
             href="#contact"
-            className="ml-2 rounded-xl bg-ink px-4 py-2 text-sm font-semibold text-ink-foreground transition-transform hover:-translate-y-0.5"
+            className="ml-2 rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-transform hover:-translate-y-0.5"
           >
             Book Demo
           </a>
