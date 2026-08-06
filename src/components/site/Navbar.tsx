@@ -80,7 +80,7 @@ export function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-xl bg-ink px-4 py-2.5 text-center text-sm font-semibold text-ink-foreground"
+              className="mt-2 rounded-xl bg-accent px-4 py-2.5 text-center text-sm font-semibold text-accent-foreground"
             >
               Book Demo
             </a>
