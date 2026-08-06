@@ -1,5 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal, Section } from "./primitives";
+import { Logo } from "./Logo";
+
 
 export function FinalCta() {
   return (
