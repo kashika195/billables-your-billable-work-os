@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Logo } from "./Logo";
 
 const links = [
   { label: "Features", href: "#features" },
@@ -29,11 +30,8 @@ export function Navbar() {
           scrolled ? "glass-panel shadow-soft" : "border border-transparent",
         )}
       >
-        <a href="#top" className="flex min-w-0 items-center gap-2 font-display text-lg font-bold">
-          <span className="grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
-            B
-          </span>
-          <span className="truncate">Billables</span>
+        <a href="#top" className="flex min-w-0 items-center">
+          <Logo />
         </a>
 
         <div className="ml-auto hidden items-center gap-1 md:flex">

@@ -28,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 text-5xl leading-[0.95] font-bold sm:text-6xl md:text-7xl"
           >
-            Work. Log. <span className="text-gradient-brand">Get paid.</span>
+            Work. Log. <span className="text-gradient-brand">Generate Bill.</span>
           </motion.h1>
 
           <motion.p
