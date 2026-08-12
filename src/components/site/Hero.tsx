@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Play } from "lucide-react";
-import dashboard from "@/assets/dashboard.jpeg.asset.json";
-import mobileHome from "@/assets/mobile-home.jpeg.asset.json";
+import dashboard from "@/assets/dashboard.jpeg";
+import mobileHome from "@/assets/mobile-home.jpeg";
 import { BrowserFrame, Counter, PhoneFrame } from "./primitives";
 
 export function Hero() {

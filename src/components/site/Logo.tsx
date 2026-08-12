@@ -1,4 +1,4 @@
-import mark from "@/assets/billables-mark.png.asset.json";
+import mark from "@/assets/billables-mark.png";
 import { cn } from "@/lib/utils";
 
 export function Logo({

@@ -1,6 +1,6 @@
-import projects from "@/assets/projects.jpeg.asset.json";
-import timesheets from "@/assets/timesheets.jpeg.asset.json";
-import reimbursements from "@/assets/reimbursements.jpeg.asset.json";
+import projects from "@/assets/projects.jpeg";
+import timesheets from "@/assets/timesheets.jpeg";
+import reimbursements from "@/assets/reimbursements.jpeg";
 import { BrowserFrame, Reveal, Section } from "./primitives";
 import { cn } from "@/lib/utils";
 

@@ -1,8 +1,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import dashboard from "@/assets/dashboard.jpeg.asset.json";
-import timesheets from "@/assets/timesheets.jpeg.asset.json";
-import reimbursements from "@/assets/reimbursements.jpeg.asset.json";
+import dashboard from "@/assets/dashboard.jpeg";
+import timesheets from "@/assets/timesheets.jpeg";
+import reimbursements from "@/assets/reimbursements.jpeg";
 import { BrowserFrame, Eyebrow, Reveal, Section } from "./primitives";
 
 export function Showcase() {

@@ -1,4 +1,4 @@
-import mobileHome from "@/assets/mobile-home.jpeg.asset.json";
+import mobileHome from "@/assets/mobile-home.jpeg";
 import { Eyebrow, PhoneFrame, Reveal, Section } from "./primitives";
 
 const points = [
