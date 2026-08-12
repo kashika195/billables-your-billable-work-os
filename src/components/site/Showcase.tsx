@@ -1,8 +1,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import dashboard from "@/assets/dashboard.jpeg.asset.json";
-import timesheets from "@/assets/timesheets.jpeg.asset.json";
-import reimbursements from "@/assets/reimbursements.jpeg.asset.json";
+import dashboard from "@/assets/dashboard.jpeg";
+import timesheets from "@/assets/timesheets.jpeg";
+import reimbursements from "@/assets/reimbursements.jpeg";
 import { BrowserFrame, Eyebrow, Reveal, Section } from "./primitives";
 
 export function Showcase() {
@@ -29,7 +29,7 @@ export function Showcase() {
 
       <div ref={ref} className="relative mt-14">
         <motion.div style={{ y: y1 }} className="relative">
-          <BrowserFrame src={dashboard.url} alt="Billables dashboard with my work and admin actions" />
+          <BrowserFrame src={dashboard} alt="Billables dashboard with my work and admin actions" />
           <div className="glass-panel absolute top-8 -left-3 hidden rounded-xl px-3 py-2 text-xs font-semibold shadow-soft md:block">
             Personal + admin view in one
           </div>
@@ -42,7 +42,7 @@ export function Showcase() {
           <motion.div style={{ y: y2 }}>
             <Reveal>
               <BrowserFrame
-                src={timesheets.url}
+                src={timesheets}
                 alt="My timesheets screen listing entries and hours"
                 label="app.billables.io/timesheets"
               />
@@ -53,7 +53,7 @@ export function Showcase() {
           </motion.div>
           <Reveal delay={0.1}>
             <BrowserFrame
-              src={reimbursements.url}
+              src={reimbursements}
               alt="My reimbursements screen listing expenses and statuses"
               label="app.billables.io/reimbursements"
             />

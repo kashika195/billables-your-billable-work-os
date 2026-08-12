@@ -1,6 +1,6 @@
-import projects from "@/assets/projects.jpeg.asset.json";
-import timesheets from "@/assets/timesheets.jpeg.asset.json";
-import reimbursements from "@/assets/reimbursements.jpeg.asset.json";
+import projects from "@/assets/projects.jpeg";
+import timesheets from "@/assets/timesheets.jpeg";
+import reimbursements from "@/assets/reimbursements.jpeg";
 import { BrowserFrame, Reveal, Section } from "./primitives";
 import { cn } from "@/lib/utils";
 
@@ -11,7 +11,7 @@ const features = [
     title: "Manage internal and client projects effortlessly.",
     body: "Spin up a project, assign the team, set the type and watch hours land against it automatically.",
     points: ["Internal vs external", "Member assignment", "Archive without losing history"],
-    image: projects.url,
+    image: projects,
     alt: "My Projects list with clients, types and statuses",
   },
   {
@@ -20,7 +20,7 @@ const features = [
     title: "Log work in seconds.",
     body: "Pick a project, type what you did, submit. Filters, grouping and totals do the rest.",
     points: ["Billable / non-billable", "Bulk submission", "Live totals by status"],
-    image: timesheets.url,
+    image: timesheets,
     alt: "My Timesheets with entries, hours and statuses",
   },
   {
@@ -29,7 +29,7 @@ const features = [
     title: "Upload receipts. Track approvals. Get paid faster.",
     body: "Multi-currency expenses attached to the right project and client from the moment they're created.",
     points: ["Multi-currency", "Receipt attachments", "Status you can actually see"],
-    image: reimbursements.url,
+    image: reimbursements,
     alt: "My Reimbursements list with amounts and approval statuses",
   },
 ];

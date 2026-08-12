@@ -1,4 +1,4 @@
-import mobileHome from "@/assets/mobile-home.jpeg.asset.json";
+import mobileHome from "@/assets/mobile-home.jpeg";
 import { Eyebrow, PhoneFrame, Reveal, Section } from "./primitives";
 
 const points = [
@@ -41,7 +41,7 @@ export function MobileApp() {
 
           <Reveal delay={0.1} className="flex justify-center">
             <div className="animate-float-slow">
-              <PhoneFrame src={mobileHome.url} alt="Billables mobile app showing my work summary" />
+              <PhoneFrame src={mobileHome} alt="Billables mobile app showing my work summary" />
             </div>
           </Reveal>
         </div>

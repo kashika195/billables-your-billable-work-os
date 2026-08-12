@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Play } from "lucide-react";
-import dashboard from "@/assets/dashboard.jpeg.asset.json";
-import mobileHome from "@/assets/mobile-home.jpeg.asset.json";
+import dashboard from "@/assets/dashboard.jpeg";
+import mobileHome from "@/assets/mobile-home.jpeg";
 import { BrowserFrame, Counter, PhoneFrame } from "./primitives";
 
 export function Hero() {
@@ -71,12 +71,12 @@ export function Hero() {
           className="relative mx-auto mt-16 max-w-5xl"
         >
           <div className="animate-float-slow">
-            <BrowserFrame src={dashboard.url} alt="Billables dashboard showing work and admin actions" />
+            <BrowserFrame src={dashboard} alt="Billables dashboard showing work and admin actions" />
           </div>
 
           <div className="absolute -right-10 -bottom-16 hidden lg:block">
             <div className="animate-float-slow [animation-delay:1.2s]">
-              <PhoneFrame src={mobileHome.url} alt="Billables mobile app home screen" className="w-[172px]" />
+              <PhoneFrame src={mobileHome} alt="Billables mobile app home screen" className="w-[172px]" />
             </div>
           </div>
 
