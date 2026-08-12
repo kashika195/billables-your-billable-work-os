@@ -41,7 +41,7 @@ export function MobileApp() {
 
           <Reveal delay={0.1} className="flex justify-center">
             <div className="animate-float-slow">
-              <PhoneFrame src={mobileHome.url} alt="Billables mobile app showing my work summary" />
+              <PhoneFrame src={mobileHome} alt="Billables mobile app showing my work summary" />
             </div>
           </Reveal>
         </div>

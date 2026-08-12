@@ -13,7 +13,7 @@ export function Logo({
   return (
     <span className={cn("inline-flex min-w-0 items-center gap-2.5", className)}>
       <img
-        src={mark.url}
+        src={mark}
         alt="Billables logo"
         width={32}
         height={32}
