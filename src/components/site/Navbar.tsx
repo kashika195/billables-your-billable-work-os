@@ -3,7 +3,6 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Logo } from "./Logo";
 
-
 const links = [
   { label: "Features", href: "#features" },
   { label: "AI", href: "#ai" },
@@ -35,7 +34,6 @@ export function Navbar() {
           <Logo />
         </a>
 
-
         <div className="ml-auto hidden items-center gap-1 md:flex">
           {links.map((l) => (
             <a
@@ -48,7 +46,7 @@ export function Navbar() {
           ))}
           <a
             href="#contact"
-            className="ml-2 rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-transform hover:-translate-y-0.5"
+            className="ml-2 rounded-xl bg-ink px-4 py-2 text-sm font-semibold text-ink-foreground transition-transform hover:-translate-y-0.5"
           >
             Book Demo
           </a>
@@ -80,7 +78,7 @@ export function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-xl bg-accent px-4 py-2.5 text-center text-sm font-semibold text-accent-foreground"
+              className="mt-2 rounded-xl bg-ink px-4 py-2.5 text-center text-sm font-semibold text-ink-foreground"
             >
               Book Demo
             </a>

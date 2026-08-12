@@ -1,8 +1,6 @@
 import projects from "@/assets/projects.jpeg.asset.json";
 import timesheets from "@/assets/timesheets.jpeg.asset.json";
 import reimbursements from "@/assets/reimbursements.jpeg.asset.json";
-import clients from "@/assets/clients.jpeg.asset.json";
-import projectManagement from "@/assets/project-management.jpeg.asset.json";
 import { BrowserFrame, Reveal, Section } from "./primitives";
 import { cn } from "@/lib/utils";
 
@@ -33,24 +31,6 @@ const features = [
     points: ["Multi-currency", "Receipt attachments", "Status you can actually see"],
     image: reimbursements.url,
     alt: "My Reimbursements list with amounts and approval statuses",
-  },
-  {
-    id: "clients",
-    kicker: "Clients",
-    title: "Manage organisations from one place.",
-    body: "Every client, their projects and their timesheet preferences — searchable and always current.",
-    points: ["Billable flags", "Projects per client", "Country and contact details"],
-    image: clients.url,
-    alt: "Client Management screen listing client organisations",
-  },
-  {
-    id: "roles",
-    kicker: "Roles & users",
-    title: "Assign permissions with ease. Invite teammates instantly.",
-    body: "Admins, approvers and consultants each see exactly what they should — nothing more.",
-    points: ["Granular role management", "One-click invites", "Approver hierarchies"],
-    image: projectManagement.url,
-    alt: "Project management admin screen with member avatars and actions",
   },
 ];
 

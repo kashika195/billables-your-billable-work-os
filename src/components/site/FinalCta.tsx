@@ -2,7 +2,6 @@ import { ArrowRight } from "lucide-react";
 import { Reveal, Section } from "./primitives";
 import { Logo } from "./Logo";
 
-
 export function FinalCta() {
   return (
     <Section id="contact">
@@ -48,7 +47,6 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.4fr_repeat(3,minmax(0,1fr))]">
         <div>
           <Logo />
-
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
             The operating system for billable work — built for consulting and professional service firms.
           </p>
