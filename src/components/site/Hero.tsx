@@ -25,8 +25,8 @@ export function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-7 text-[3.25rem] leading-[0.92] font-bold tracking-[-0.045em] sm:text-7xl md:text-[5.5rem]"
+            transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-6 text-5xl leading-[0.95] font-bold sm:text-6xl md:text-7xl"
           >
             Work. Log. <span className="text-gradient-brand">Get paid.</span>
           </motion.h1>
@@ -34,8 +34,8 @@ export function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-auto mt-7 max-w-xl text-base text-muted-foreground md:text-lg"
+            transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl"
           >
             Billables is the operating system for billable work. Projects, timesheets, reimbursements,
             approvals and billing — one platform, zero spreadsheets.
@@ -44,25 +44,24 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
-            className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
           >
             <a
               href="#contact"
-              className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground shadow-float transition-transform hover:-translate-y-0.5 sm:w-auto"
+              className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-ink px-6 py-3.5 text-sm font-semibold text-ink-foreground shadow-soft transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
               Book a demo
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#showcase"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-border px-6 py-3.5 text-sm font-semibold text-muted-foreground transition-colors hover:border-accent/50 hover:text-foreground sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-border bg-card px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-muted sm:w-auto"
             >
-              <Play className="h-4 w-4 text-accent" />
+              <Play className="h-4 w-4 text-primary" />
               Watch product tour
             </a>
           </motion.div>
-
         </div>
 
         <motion.div
